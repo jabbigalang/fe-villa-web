@@ -1,0 +1,23 @@
+<h2>Resident Directory</h2>
+<table>
+  <thead>
+    <tr>
+      <th hidden>ID</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Birthdate</th>
+      <th>Email Address</th>
+      <th>Mobile Number</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let resident of residents">
+      <td hidden>{{ resident.id }}</td>
+      <td>{{ resident.firstname }}</td>
+      <td>{{ resident.lastname }}</td>
+      <td>{{ resident.birthdate }}</td>
+      <td>{{ resident.emailAddress }}</td>
+      <td>{{ resident.mobileNumber }}</td>
+    </tr>
+  </tbody>
+</table>

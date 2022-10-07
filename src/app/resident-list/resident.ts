@@ -1,28 +1,9 @@
 export interface Resident {
-  id: number;
+  id: string;
+  houseId: string;
   firstname: string;
   lastname: string;
+  birthdate: string;
+  emailAddress: string;
+  mobileNumber: string;
 }
-
-export const residents = [
-  {
-    id: 1,
-    firstname: 'Chrisen',
-    lastname: 'Galang'
-  },
-  {
-    id: 2,
-    firstname: 'Revienne',
-    lastname: 'Galang'
-  },
-  {
-    id: 3,
-    firstname: 'Chase',
-    lastname: 'Galang'
-  },
-  {
-    id: 4,
-    firstname: 'Gareth',
-    lastname: 'Marzan'
-  }
-]

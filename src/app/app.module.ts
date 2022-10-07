@@ -1,21 +1,26 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AppRoutingModule } from './app-routing.module';
+import { RouterModule } from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
-import { HttpClientModule } from '@angular/common/http';
-import { ResidentListComponent } from "./resident-list/resident-list.component";
+import { ResidentComponent } from './resident-list/resident.component'
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ResidentListComponent
-  ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    ReactiveFormsModule,
+    RouterModule.forRoot([
+      { path: '', component: ResidentComponent },
+    ]),
     HttpClientModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  declarations: [
+    AppComponent,
+    ResidentComponent
+  ],
+  bootstrap: [
+    AppComponent
+  ]
 })
 export class AppModule { }
