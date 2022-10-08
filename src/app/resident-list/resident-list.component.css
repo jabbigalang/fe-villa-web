@@ -1,6 +1,6 @@
 .resident-list-container {
   text-align: center;
-  padding: 0 10em 0 10em;
+  padding: 0 5em 0 5em;
 }
 
 .resident-list-container > h2 {
@@ -30,4 +30,10 @@
 
 .resident-card > p {
   font-size: large;
+}
+
+@media only screen and (max-width: 767px) {
+  .resident-list-container {
+    padding: 0 2em 0 2em;
+  }
 }

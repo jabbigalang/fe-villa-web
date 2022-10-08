@@ -2,17 +2,18 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding: 0 5em 0 5em;
+  column-gap: 0.5em;
+}
+
+.nav-container > * {
+  flex: 1;
 }
 
 .nav-card {
   background-color: #eeeeee;
-  padding: 5px;
-  height: 50%;
-  width: 500px;
-  margin: 10px;
   text-align: center;
   border-radius: 5px;
-  cursor: pointer;
 }
 
 .nav-card:hover {
@@ -22,4 +23,14 @@
 .nav-card > h2 {
   color: black;
   font-weight: lighter;
+}
+
+@media only screen and (max-width: 767px) {
+  .nav-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2em 0 2em;
+    row-gap: 0.5em;
+  }
 }
