@@ -20,4 +20,12 @@ export class ResidentService {
   getResidents(): Observable<Resident[]> {
     return this.http.get<Resident[]>(this.residentUrl);
   }
+
+  getResident(residentId: string) {
+    const options = {
+      params: new HttpParams().set('residentId', residentId)
+    }
+
+    return this.http.get<Resident>(this.residentUrl + '/{residentId}', options);
+  }
 }
