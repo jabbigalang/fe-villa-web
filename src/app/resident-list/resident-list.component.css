@@ -1,0 +1,33 @@
+.resident-list-container {
+  text-align: center;
+  padding: 0 10em 0 10em;
+}
+
+.resident-list-container > h2 {
+  font-weight: lighter;
+}
+
+.resident-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.resident-card {
+  padding: 0 2em 0 2em;
+  border: 1px solid #eeeeee;
+  margin-bottom: 2px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.resident-card:nth-child(even) {
+  background-color: #eeeeee;
+}
+
+.resident-card:hover {
+  background-color: #dddddd;
+}
+
+.resident-card > p {
+  font-size: large;
+}

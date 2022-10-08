@@ -1,0 +1,25 @@
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.nav-card {
+  background-color: #eeeeee;
+  padding: 5px;
+  height: 50%;
+  width: 500px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.nav-card:hover {
+  background-color: #dddddd;
+}
+
+.nav-card > h2 {
+  color: black;
+  font-weight: lighter;
+}

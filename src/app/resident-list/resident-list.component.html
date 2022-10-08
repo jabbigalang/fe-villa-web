@@ -1,0 +1,8 @@
+<div class="resident-list-container">
+  <h2>Resident Directory</h2>
+  <div class="resident-list">
+    <div class="resident-card" routerLink="/resident/{{resident.id}}" *ngFor="let resident of residents">
+      <p>{{ resident.firstname }} {{ resident.lastname }}</p>
+    </div>
+  </div>
+</div>

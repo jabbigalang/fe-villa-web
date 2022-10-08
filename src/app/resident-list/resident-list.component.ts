@@ -4,12 +4,12 @@ import { ResidentService } from "./resident.service";
 
 @Component({
   selector: 'app-resident-list',
-  templateUrl: './resident.component.html',
-  styleUrls: [ './resident.component.css' ],
+  templateUrl: './resident-list.component.html',
+  styleUrls: [ './resident-list.component.css' ],
   providers: [ResidentService]
 })
 
-export class ResidentComponent implements OnInit {
+export class ResidentListComponent implements OnInit {
   residents: Resident[] = [];
 
   constructor(private residentService: ResidentService) {}

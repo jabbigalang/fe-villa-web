@@ -1,0 +1,57 @@
+html, body, main {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter Tight", sans-serif;
+  font-weight: lighter;
+}
+
+header {
+  margin: 0;
+  background-color: #8a9a5b;
+  padding: 10px 0 10px 5em;
+}
+
+header > .title > h1 {
+  color: white;
+  letter-spacing: 4px;
+  padding: 0;
+  margin: 0;
+}
+
+header > .title > h2 {
+  padding: 0;
+  margin: 0;
+  font-weight: lighter;
+}
+
+.nav-container {
+  height: 85%;
+  padding: 0 5em 0 5em;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-card {
+  background-color: #eeeeee;
+  padding: 5px;
+  height: 80%;
+  width: 500px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.nav-card:hover {
+  background-color: #dddddd;
+}
+
+.nav-card > h2 {
+  color: black;
+  font-weight: lighter;
+}
