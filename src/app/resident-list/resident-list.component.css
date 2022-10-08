@@ -10,12 +10,16 @@
 .resident-list {
   display: flex;
   flex-direction: column;
+  row-gap: 0.5em;
+}
+
+.resident-list > * {
+  flex: 1;
 }
 
 .resident-card {
   padding: 0 2em 0 2em;
   border: 1px solid #eeeeee;
-  margin-bottom: 2px;
   text-align: left;
   cursor: pointer;
 }
