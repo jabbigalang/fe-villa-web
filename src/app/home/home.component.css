@@ -1,0 +1,44 @@
+h1, h2, h3 {
+  font-weight: lighter;
+}
+
+.jumbotron {
+  display: flex;
+  font-family: "Vollkorn", serif;
+  font-size: xx-large;
+  color: #14a800;
+}
+
+.jumbotron > h1 {
+  width:80%
+}
+
+.jumbotron > img {
+  width: 60%;
+  filter: blur(2px);
+}
+
+.announcement {
+  text-align: center;
+  width: 100%;
+
+  font-family: "Public Sans", sans-serif;
+}
+
+.announcement-flex {
+  display: flex;
+  column-gap: 10px;
+  row-gap: 10px;
+  width: 100%;
+}
+
+.announcement-card {
+  border-radius: 5px;
+  padding: 10px;
+  text-align: left;
+}
+
+.announcement-card:nth-child(even) {
+  background-color: #d98310;
+  color: white;
+}

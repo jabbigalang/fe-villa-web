@@ -1,0 +1,45 @@
+header {
+  height: 10%;
+  padding: 0 20em 0 20em;
+
+  font-family: "Public Sans", sans-serif
+}
+
+.header-flex {
+  height: 100%;
+  display: flex;
+  border-bottom: 1px solid #777777;
+}
+
+.header-flex > h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.header-flex {
+  align-items: center;
+}
+
+.header-flex > h1 > span {
+  color: #14a800;
+  font-weight: bold;
+}
+
+.header-flex > nav > ul {
+  list-style: none;
+}
+
+.header-flex > nav > ul > li {
+  display: inline;
+  margin-right: 1.5em;
+}
+
+.header-flex > nav > ul > li > a {
+  text-decoration: none;
+  color: #777777;
+}
+
+.header-flex > nav > ul > li > a:hover {
+  color: #14a800;
+  font-weight: bold;
+}
