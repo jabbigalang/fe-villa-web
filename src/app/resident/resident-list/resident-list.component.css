@@ -1,0 +1,8 @@
+.resident-list {
+  font-family: "Public Sans", sans-serif;
+
+}
+
+.resident-list > h1,h2,h3 {
+  font-weight: lighter;
+}

@@ -6,10 +6,12 @@ import {AppComponent} from './app.component';
 import {HttpClientModule} from "@angular/common/http";
 import {HeaderComponent} from "./header/header.component";
 import {HomeComponent} from "./home/home.component";
+import {ResidentListComponent} from "./resident/resident-list/resident-list.component";
+import {ResidentModule} from "./resident/resident.module";
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
-  {path: '/residents', component: Resident}
+  {path: 'residents', component: ResidentListComponent}
 ]
 
 @NgModule({
@@ -17,7 +19,8 @@ const routes: Routes = [
     BrowserModule,
     ReactiveFormsModule,
     RouterModule.forRoot(routes),
-    HttpClientModule
+    HttpClientModule,
+    ResidentModule
   ],
   exports: [
     RouterModule
